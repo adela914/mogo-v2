@@ -1,0 +1,9 @@
+{
+  "short_name": "Mogo v.2",
+  "name": "Find Korean restaurants in Berlin",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#",
+  "background_color": "#fcc944"
+}
