@@ -1,17 +1,23 @@
-import { useState } from 'react'
-import { TextField } from '../../components/TextField'
+import { Link } from 'react-router-dom'
+
+const links = [
+  { to: '', name: 'Home' },
+  { to: 'playground', name: 'Playground' },
+  { to: 'accordion', name: 'Accordion' }
+]
 
 export const Main = () => {
-  const [searchValue, setSearchValue] = useState('')
-
   return (
     <>
-      <TextField
-        forId="test"
-        value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
-      />
-      <p>here is main</p>
+      <ul>
+        {links.map(({ name, to }) => {
+          return (
+            <li key={to}>
+              <Link to={`/${to}`}>{name}</Link>
+            </li>
+          )
+        })}
+      </ul>
     </>
   )
 }

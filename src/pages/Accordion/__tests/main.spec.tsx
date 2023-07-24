@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { Main } from '..'
+import { Accordion } from '../index'
 
 test('renders text field correctly with a label', () => {
-  render(<Main />)
+  render(<Accordion />)
 
   expect(screen.getByText('here is main')).toBeInTheDocument()
 })

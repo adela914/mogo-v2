@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
@@ -11,6 +12,8 @@ export const StyledHeader = styled.header`
   display: flex;
 `
 
-export const Heading = styled.h1`
+export const Heading = styled(Link)`
   color: var(--primary-color-1);
+  font-size: 40px;
+  text-decoration: none;
 `
